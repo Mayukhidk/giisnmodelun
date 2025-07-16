@@ -47,17 +47,29 @@ interface DisplayCardsProps {
 
 export default function DisplayCards({ cards }: DisplayCardsProps) {
   const defaultCards = [
-    {
+ {
       className:
-        "hover:-translate-y-4 active:-translate-y-4 focus:-translate-y-4 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0 sm:[grid-area:stack]",
+        "sm:[grid-area:stack] sm:-translate-x-10 sm:translate-y-6 hover:sm:-translate-y-3 active:sm:-translate-y-3 focus:sm:-translate-y-3 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
     },
     {
       className:
-        "sm:[grid-area:stack] sm:translate-x-16 sm:translate-y-10 hover:sm:-translate-y-2 active:sm:-translate-y-2 focus:sm:-translate-y-2 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
+        "sm:[grid-area:stack] sm:translate-x-20 sm:-translate-y-8 hover:sm:-translate-y-4 active:sm:-translate-y-4 focus:sm:-translate-y-4 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
     },
     {
       className:
-        "sm:[grid-area:stack] sm:translate-x-32 sm:translate-y-20 hover:sm:-translate-y-1 active:sm:-translate-y-1 focus:sm:-translate-y-1 grayscale hover:grayscale-0",
+        "sm:[grid-area:stack] sm:-translate-x-24 sm:translate-y-16 hover:sm:-translate-y-2 active:sm:-translate-y-2 focus:sm:-translate-y-2 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
+    },
+    {
+      className:
+        "sm:[grid-area:stack] sm:translate-x-10 sm:translate-y-24 hover:sm:-translate-y-5 active:sm:-translate-y-5 focus:sm:-translate-y-5 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
+    },
+    {
+      className:
+        "sm:[grid-area:stack] sm:-translate-x-16 sm:-translate-y-14 hover:sm:-translate-y-7 active:sm:-translate-y-7 focus:sm:-translate-y-7 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
+    },
+    {
+      className:
+        "sm:[grid-area:stack] sm:translate-x-28 sm:translate-y-8 hover:sm:-translate-y-6 active:sm:-translate-y-6 focus:sm:-translate-y-6 before:absolute before:w-full before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale hover:grayscale-0 before:left-0 before:top-0 before:transition-opacity before:duration-700 before:opacity-100 hover:before:opacity-0 active:before:opacity-0 focus:before:opacity-0",
     },
   ];
 

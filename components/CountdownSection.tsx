@@ -23,6 +23,7 @@ const CountdownSection = () => {
       <div
         style={{
           position: "absolute",
+          borderTop:"13px lightblue solid",
           top: 0,
           left: 0,
           width: "100%",

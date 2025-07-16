@@ -85,7 +85,7 @@ body {
 }
 .top-left-logo {
   position: fixed;
-  top: 30px;
+  top: 10px;
   left: 10px;
   width: 150px; /* adjust size as needed */
   height: auto;

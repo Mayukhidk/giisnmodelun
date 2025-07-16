@@ -8,7 +8,7 @@ export function NavBarDemo() {
     { name: 'Home', url: '#Home', icon: Home },
     { name: 'About', url: '#About', icon: User },
     { name: 'Committees', url: '#Committees', icon: Briefcase },
-    { name: 'Itenary', url: '#Timeline', icon: Briefcase },
+    { name: 'itinerary', url: '#Timeline', icon: Briefcase },
     { name: 'Secratriat', url: '#sec', icon: FileText }
   ]
 
