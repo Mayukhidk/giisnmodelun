@@ -1,93 +1,100 @@
-import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+"use"
+import { Button } from "@/components/button"
 
-interface Footer7Props {
-  logo?: {
-    url: string;
-    src: string;
-    alt: string;
-    title: string;
-  };
-  sections?: Array<{
-    title: string;
-    links: Array<{ name: string; href: string }>;
-  }>;
-  description?: string;
-  socialLinks?: Array<{
-    icon: React.ReactElement;
-    href: string;
-    label: string;
-  }>;
-  copyright?: string;
+interface FooterProps {
+  logo: React.ReactNode
+  brandName: string
+  socialLinks: Array<{
+    icon: React.ReactNode
+    href: string
+    label: string
+  }>
+  mainLinks: Array<{
+    href: string
+    label: string
+  }>
+  legalLinks: Array<{
+    href: string
+    label: string
+  }>
+  copyright: {
+    text: string
+    license?: string
+  }
 }
 
-const defaultSocialLinks = [
-  { icon: <FaInstagram className="size-5" />, href: "https://www.instagram.com/giisn_mun?utm_source=ig_web_button_share_sheet&igsh=MTJ2b2FzbmozNDIwZg==", label: "Instagram" },
-  { icon: <FaFacebook className="size-5" />, href: "https://www.instagram.com/giisn_mun?utm_source=ig_web_button_share_sheet&igsh=MTJ2b2FzbmozNDIwZg==", label: "Facebook" },
-];
-
-export const Footer7 = ({
-  logo = {
-    url: "https://www.giis.com",
-    src: "Giis Background Removed.png",
-    alt: "Global Indian International School",
-    title: "Global Indian International School",
-  },
-  description = "Empowering global thinkers through inclusive diplomacy and collaborative dialogue.",
-  sections = [],
-  socialLinks = defaultSocialLinks,
-  copyright = "© 2025 Global Indian International School Model United Nations. All rights reserved.",
-}: Footer7Props) => {
+export function Footer({
+  logo,
+  brandName,
+  socialLinks,
+  mainLinks,
+  legalLinks,
+  copyright,
+}: FooterProps) {
   return (
-    <section className="py-32">
-      <div className="container mx-auto">
-        <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
-          {/* Left: Logo + Desc + Social */}
-          <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
-            <div className="flex items-center gap-2 lg:justify-start">
-              <a href={logo.url}>
-                <img src={logo.src} alt={logo.alt} title={logo.title} className="h-8" />
-              </a>
-              <h2 className="text-xl font-semibold">{logo.title}</h2>
-            </div>
-            {description && (
-              <p className="max-w-[70%] text-sm text-muted-foreground">{description}</p>
-            )}
-            <ul className="flex items-center space-x-6 text-muted-foreground">
-              {socialLinks.map((social, idx) => (
-                <li key={idx} className="font-medium hover:text-primary">
-                  <a href={social.href} aria-label={social.label} target="_blank" rel="noreferrer">
-                    {social.icon}
+    <footer className="pb-6 pt-16 lg:pb-8 lg:pt-24">
+      <div className="px-4 lg:px-8">
+        <div className="md:flex md:items-start md:justify-between">
+          <a
+            href="/"
+            className="flex items-center gap-x-2"
+            aria-label={brandName}
+          >
+            {logo}
+            <span className="font-bold text-xl">{brandName}</span>
+          </a>
+          <ul className="flex list-none mt-6 md:mt-0 space-x-3">
+            {socialLinks.map((link, i) => (
+              <li key={i}>
+                <Button
+                  variant="secondary"
+                  size="icon"
+                  className="h-10 w-10 rounded-full"
+                  asChild
+                >
+                  <a href={link.href} target="_blank" aria-label={link.label}>
+                    {link.icon}
+                  </a>
+                </Button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="border-t mt-6 pt-6 md:mt-4 md:pt-8 lg:grid lg:grid-cols-10">
+          <nav className="lg:mt-0 lg:col-[4/11]">
+            <ul className="list-none flex flex-wrap -my-1 -mx-2 lg:justify-end">
+              {mainLinks.map((link, i) => (
+                <li key={i} className="my-1 mx-2 shrink-0">
+                  <a
+                    href={link.href}
+                    className="text-sm text-primary underline-offset-4 hover:underline"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="mt-6 lg:mt-0 lg:col-[4/11]">
+            <ul className="list-none flex flex-wrap -my-1 -mx-3 lg:justify-end">
+              {legalLinks.map((link, i) => (
+                <li key={i} className="my-1 mx-3 shrink-0">
+                  <a
+                    href={link.href}
+                    className="text-sm text-muted-foreground underline-offset-4 hover:underline"
+                  >
+                    {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-
-          {/* Right: Sections */}
-          {sections.length > 0 && (
-            <div className="grid w-full gap-6 md:grid-cols-3 lg:gap-20">
-              {sections.map((section, sectionIdx) => (
-                <div key={sectionIdx}>
-                  <h3 className="mb-4 font-bold">{section.title}</h3>
-                  <ul className="space-y-3 text-sm text-muted-foreground">
-                    {section.links.map((link, linkIdx) => (
-                      <li key={linkIdx} className="font-medium hover:text-primary">
-                        <a href={link.href}>{link.name}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Bottom: Copyright Only */}
-        <div className="mt-8 border-t py-8 text-xs font-medium text-muted-foreground text-center md:text-left">
-          <p>{copyright}</p>
+          <div className="mt-6 text-sm leading-6 text-muted-foreground whitespace-nowrap lg:mt-0 lg:row-[1/3] lg:col-[1/4]">
+            <div>{copyright.text}</div>
+            {copyright.license && <div>{copyright.license}</div>}
+          </div>
         </div>
       </div>
-    </section>
-  );
-};
+    </footer>
+  )
+}

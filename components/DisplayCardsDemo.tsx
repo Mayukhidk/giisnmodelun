@@ -36,17 +36,17 @@ const defaultCards = [
 
 function DisplayCardsDemo() {
   return (
-    <div className="relative bg-white min-h-screen margin-top-[100px]">
+    <div className="w-full px-6 flex flex-col lg:flex-row items-start justify-between gap-10">
       <div className="w-full px-6 flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left: Cards */}
-        <div className="w-full lg:w-2/3">
+        <div className="w-full px-10 flex flex-col lg:flex-row items-start justify-between gap-10">
           <DisplayCards cards={defaultCards} />
         </div>
 
         {/* Right: Heading */}
-        <div className="w-full lg:w-1/3 flex flex-col justify-start items-end mt-10 lg:mt-0">
+        <div className="w-full lg:w-2/3 flex flex-col justify-start items-end mt-10 lg:mt-0 -ml-[140px]">
           <h2 className="text-6xl lg:text-9xl font-bold text-black leading-none text-right mb-8">
-            Our<br />Committees
+            Top<br />Committees
           </h2>
         </div>
       </div>
