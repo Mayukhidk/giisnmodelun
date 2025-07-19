@@ -36,10 +36,6 @@ const HeroDemo = () => {
         </h1>
         <p className="my-6 max-w-xl text-sm text-slate-700 md:text-base">
           Global Indian International School's Model United Nations conference
-          brings together students from around the world to discuss global issues,
-          develop diplomatic skills, and foster international understanding.
-          Join us for an enriching experience that empowers the next generation of
-          leaders.
         </p>
         <div className="flex items-center justify-center gap-4">
 
