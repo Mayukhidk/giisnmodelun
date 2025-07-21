@@ -34,7 +34,7 @@ const HeroDemo = () => {
         <h1 className="max-w-xl text-5xl font-bold tracking-tighter text-slate-800">
           Welcome!
         </h1>
-        <p className="my-6 max-w-xl text-sm text-slate-700 md:text-base">
+        <p className="my-6 max-w-xl text-sm text md:text-base">
           Global Indian International School's Model United Nations conference
         </p>
         <div className="flex items-center justify-center gap-4">
