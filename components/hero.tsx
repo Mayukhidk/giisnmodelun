@@ -6,11 +6,11 @@ import {
 } from "@/components/hero-gallery-scroll-animation"
 
 const IMAGES = [
-  "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?q=80&w=2264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1551641506-ee5bf4cb45f1?q=80&w=2368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG9reW98ZW58MHx8MHx8fDA%3D",
-  "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRva3lvfGVufDB8fDB8fHww",
+  "https://media.discordapp.net/attachments/780755248762978324/1399807488823394345/164e8a00-e1a6-4048-9687-a6b761313e4a.png?ex=688a57d0&is=68890650&hm=3878f88ed499bcd89c3245bd07f6bf5246188ed0689e25eb73f7fd05c0cf2e1f&=&format=webp&quality=lossless&width=846&height=423",
+  "https://media.discordapp.net/attachments/780755248762978324/1399808231735427172/e055b403-b9fa-4589-843d-9c8ce078295f.jpg?ex=688a5881&is=68890701&hm=2360ccb71a94a79115dd3b10c64d215a8c6fdec66fcb0db4da21701903a7c885&=&format=webp&width=527&height=527",
+  "https://media.discordapp.net/attachments/780755248762978324/1399808701761851463/4ad90b83-fb82-4c2f-8090-d187cb37629a.png?ex=688a58f1&is=68890771&hm=79f8ab1dff8facc37826d586cecf49c0e501fe16059fd06d622437a3fdc79a0c&=&format=webp&quality=lossless",
+  "https://media.discordapp.net/attachments/780755248762978324/1399809078242447511/c8fe3929-fd31-4aac-8263-2a6986066f58.png?ex=688a594b&is=688907cb&hm=96891faa211a1631094d3e85014a9829a6c70cdeb7b7268ff3cab143436c83b1&=&format=webp&quality=lossless",
+  "https://media.discordapp.net/attachments/780755248762978324/1399809230218727454/f06a9e_fbf9ea1fc3f04a03bbb2c48851b5af0c.png?ex=688a596f&is=688907ef&hm=7ec88d7482048b4440d998bdc4c7e67f1165aac0c26ccf6747fe73f22377ad5f&=&format=webp&quality=lossless",
 ]
 const HeroDemo = () => {
   return (
