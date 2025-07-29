@@ -16,9 +16,9 @@ export function Features() {
                                             fill="currentColor"
                                         />
                                     </svg>
-                                    <span className="mx-auto block w-fit text-5xl font-semibold">100%</span>
+                                    <span className="mx-auto block w-fit text-5xl font-semibold">Voices of reason, agents of change</span>
                                 </div>
-                                <h2 className="mt-6 text-center text-3xl font-semibold">Great Time</h2>
+                                
                             </CardContent>
                         </Card>
                                                 <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
