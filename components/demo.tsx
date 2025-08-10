@@ -35,7 +35,7 @@ export function AnimatedTestimonialsDemo() {
         "As Deputy Director General, I’ve seen firsthand the power of collaboration in bringing ideas to life.",
       name: "Daniel",
       designation: "Deputy Director General",
-      src: "/dan.jpeg",
+      src: "/Dan.jpeg",
     },
     {
       quote:
