@@ -33,24 +33,21 @@ const defaultCards = [
   },
 ];
 
-
 function DisplayCardsDemo() {
   return (
-    <div className="w-full px-6 flex flex-col lg:flex-row items-start justify-between gap-10">
-      <div className="w-full px-6 flex flex-col lg:flex-row items-start justify-between gap-10">
-        {/* Left: Cards */}
-        <div className="w-full px-10 flex flex-col lg:flex-row items-start justify-between gap-10">
-          <DisplayCards cards={defaultCards} />
-        </div>
+    <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 overflow-x-hidden">
+      {/* Left: Cards */}
+      <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6">
+      <DisplayCards cards={defaultCards} />
+      </div>
 
-        {/* Right: Heading */}
-        <div className="w-full lg:w-2/3 flex flex-col justify-start items-end mt-10 lg:mt-0 -ml-[140px]">
-          <h2 className="text-6xl lg:text-9xl font-bold text-black leading-none text-right mb-8">
-            Top<br />Committees
-          </h2>
-        </div>
+      {/* Right: Heading */}
+      <div className="w-full lg:w-2/3 flex flex-col justify-start items-center lg:items-end mt-8 lg:mt-0 lg:-ml-[140px]">
+      <h2 className="text-4xl sm:text-6xl lg:text-9xl font-bold text-black leading-none text-left lg:text-right mb-6">
+        Top<br />Committees
+      </h2>
       </div>
-      </div>
+    </div>
   );
 }
 

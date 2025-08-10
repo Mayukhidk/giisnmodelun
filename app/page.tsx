@@ -14,38 +14,44 @@ import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarouselDemo";
 import { HeroScrollDemo } from "@/components/HeroScrollDemo";
 import { DownloadCenter } from "@/components/DownloadCenter";
 import { WorldMapDemo } from "@/components/WorldMapDemo";
-
+import ArticlesGridExample from "@/components/ArticlesPage";
 
 export default function Page() {
   return (
-    <div id="Home">
-      <img src="Giis Background Removed.png" alt="Global Indian International School" className="top-left-logo"></img>
+    <div id="Home" className="w-full">
+      <img
+        src="Giis Background Removed.png"
+        alt="Global Indian International School"
+        className="top-left-logo max-w-full h-auto"
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
       <HeroDemo />
       <NavBarDemo />
       <h1 className="mt-20 text-6xl font-extrabold text-center text-black">
-      About Us
+        About Us
       </h1>
       <div id="About">
-      <Features />
+        <Features />
       </div>
       <RegisterButton />
       <HeroScrollDemo />
       <div id="Timeline">
-      <TimelineDemo />
+        <TimelineDemo />
       </div>
       <div id="Committees">
-      <MotionSection />
-      <AppleCardsCarouselDemo />
+        <MotionSection />
+        <AppleCardsCarouselDemo />
       </div>
       <div id="sec">
-      <Sec />
-      <div className="flex flex-col items-start justify-start w-full h-screen p-0 m-0">
-      <div className="ml-20 pl-0">
-      <AnimatedTestimonialsDemo />
+        <Sec />
+        <div>
+          <div>
+            <AnimatedTestimonialsDemo />
+            <ArticlesGridExample />
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
-      <div className="w-full h-screen">
+      <div>
         <DownloadCenter />
         <MacbookScrollDemo />
         <WorldMapDemo />

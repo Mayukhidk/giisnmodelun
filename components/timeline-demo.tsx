@@ -25,7 +25,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "22 Aug",
+      title: "29 Aug",
       content: (
         <div>
           <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200 mb-4">
@@ -55,7 +55,7 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "23 Aug",
+      title: "30 Aug",
       content: (
         <div>
           <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200 mb-4">
@@ -90,64 +90,30 @@ export default function TimelineDemo() {
       <div className="hidden md:flex absolute top-0 right-0 h-full w-full justify-end pointer-events-none z-10">
         <div className="relative w-[340px] h-full flex flex-col items-center justify-evenly gap-6">
           <img
-            src="/hi.png"
+            src="/WhatsApp Image 2025-08-03 at 23.14.59.jpeg"
             alt="Decor 1"
             className="w-[220px] h-[32vh] object-cover border-8 border-blue-500 shadow-2xl rotate-[-8deg] transition-transform duration-300 hover:scale-110"
           />
           <img
-            src="/hi.png"
+            src="/WhatsApp Image 2025-08-03 at 23.16.14.jpeg"
             alt="Decor 2"
             className="w-[200px] h-[30vh] object-cover border-8 border-pink-500 shadow-2xl rotate-[7deg] transition-transform duration-300 hover:scale-110"
           />
           <img
-            src="/hi.png"
+            src="/WhatsApp Image 2025-08-03 at 23.18.30.jpeg"
             alt="Decor 3"
             className="w-[210px] h-[32vh] object-cover border-8 border-yellow-500 shadow-2xl rotate-[-5deg] transition-transform duration-300 hover:scale-110"
           />
           <img
-            src="/hi.png"
+            src="/WhatsApp Image 2025-08-03 at 23.33.09.jpeg"
             alt="Decor 4"
             className="w-[200px] h-[30vh] object-cover border-8 border-green-500 shadow-2xl rotate-[4deg] transition-transform duration-300 hover:scale-110"
-          />
-          <img
-            src="/hi.png"
-            alt="Decor 5"
-            className="w-[220px] h-[32vh] object-cover border-8 border-purple-500 shadow-2xl rotate-[-3deg] transition-transform duration-300 hover:scale-110"
           />
         </div>
       </div>
 
       {/* Timeline */}
       <Timeline data={data} />
-
-      {/* Mobile decor (non-overlapping grid) */}
-      <div className="block lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-8">
-        <img
-          src="/img1.jpg"
-          alt="Decor 1"
-          className="w-full h-48 object-cover border-4 border-blue-500 shadow-lg rotate-[-3deg]"
-        />
-        <img
-          src="/img2.jpg"
-          alt="Decor 2"
-          className="w-full h-48 object-cover border-4 border-pink-500 shadow-lg rotate-[3deg]"
-        />
-        <img
-          src="/img3.jpg"
-          alt="Decor 3"
-          className="w-full h-48 object-cover border-4 border-yellow-500 shadow-lg rotate-[-2deg]"
-        />  
-        <img
-          src="/img4.jpg"
-          alt="Decor 4"
-          className="w-full h-48 object-cover border-4 border-green-500 shadow-lg rotate-[3deg]"
-        />
-        <img
-          src="/img5.jpg"
-          alt="Decor 5"
-          className="w-full h-48 object-cover border-4 border-purple-500 shadow-lg rotate-[-2deg]"
-        />
-      </div>
     </div>
   )
 }

@@ -4,39 +4,112 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Leadership isn't just about guiding — it's about inspiring. This MUN would be nothing without a united vision.",
+      name: "Sejal",
+      designation: "Secretary General",
+      src: "/sej.jpeg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "A well-oiled team behind the scenes is what keeps the front running smoothly — that’s the OC spirit.",
+      name: "Mayukh",
+      designation: "HOD Organizing Committee",
+      src: "/may.jpeg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Strong planning and seamless execution — that’s the key to running a successful MUN, and we are proud of it.",
+      name: "Vanshika",
+      designation: "Deputy Secretary General",
+      src: "/van.jpeg",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Coordinating every layer of this event has been both a challenge and a joy. Excellence lies in the details.",
+      name: "Ipshita",
+      designation: "Director General",
+      src: "/sha.jpeg",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "As Deputy Director General, I’ve seen firsthand the power of collaboration in bringing ideas to life.",
+      name: "Daniel",
+      designation: "Deputy Director General",
+      src: "/dan.jpeg",
+    },
+    {
+      quote:
+        "From registrations to resolutions, administration is what keeps the event ticking — and we’ve mastered it.",
+      name: "Anvesha",
+      designation: "Administrative General",
+      src: "/anv.jpeg",
+    },
+    {
+      quote:
+        "Creativity isn’t just design — it’s the soul of our identity. Every detail reflects our spirit.",
+      name: "Sparsh",
+      designation: "HOD Creative Strategy",
+      src: "/spa.jpeg",
+    },
+    {
+      quote:
+        "Design isn’t just what it looks like — it’s how it works. Strategy turns ideas into impressions.",
+      name: "Arnav Rathi",
+      designation: "HOD Creative Strategy",
+      src: "/arn.jpeg",
+    },
+    {
+      quote:
+        "Culture connects delegates beyond debate — it brings the event to life, and that's what we aimed for.",
+      name: "Nitya",
+      designation: "HOD Cultural Affairs",
+      src: "/nit.jpeg",
+    },
+    {
+      quote:
+        "Capturing the moments, documenting the legacy — the pen really is mightier than the gavel.",
+      name: "Prateesh",
+      designation: "HOD Scribe",
+      src: "/pra.jpeg",
+    },
+    {
+      quote:
+        "Budgeting is an art — ensuring excellence while staying efficient. Every number tells a story.",
+      name: "Akshat",
+      designation: "HOD Finance",
+      src: "/aks.jpeg",
+    },
+    {
+      quote:
+        "From posters to people, every message matters. Our media is the voice of the MUN.",
+      name: "Shambhavi",
+      designation: "HOD Marketing & Media",
+      src: "/xy.jpeg",
+    },
+    {
+      quote:
+        "Moving parts, moving people, moving the event — logistics keeps the momentum alive.",
+      name: "Shubharun & Ahaana",
+      designation: "HOD Logistics",
+      src: "/shub.jpeg",
+    },
+    {
+      quote:
+        "Every delegate counts — and it’s our job to make them feel like they belong. Inclusion is key.",
+      name: "Shubhroneil",
+      designation: "HOD Delegate Affairs",
+      src: "/shubro.jpeg",
+    },
+    {
+      quote:
+        "Building relationships beyond the committee room — that’s what PR is all about.",
+      name: "Satparna",
+      designation: "HOD Public Relations",
+      src: "/choti.jpeg",
     },
   ];
+
+
+
   return <AnimatedTestimonials testimonials={testimonials} />;
 }

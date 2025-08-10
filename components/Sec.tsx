@@ -19,7 +19,9 @@ const secretariat: string[] = [
   "HOD Logistics – Shubharun & Ahaana",
   "HOD Delegate Affairs – Shubhroneil",
   "HOD Public Relations – Satparna",
+  "HOD Creative Strategy – Arnav Rathi",
 ];
+
 
 const Sec: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);

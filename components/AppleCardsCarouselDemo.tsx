@@ -22,31 +22,37 @@ const data = [
   {
     category: "United Nations General Assembly",
     title: "Addressing the Global Refugee Crisis: Evaluating Humanitarian Access and Migration Policies in Conflict Zones with a Focus on Gaza and Sudan.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/WhatsApp Image 2025-08-03 at 23.33.09.jpeg",
+    content: "Explore the humanitarian challenges and migration policies affecting refugees in conflict zones.",
   },
   {
     category: "United Nations Security Council",
     title: "China's Role in the Indo-Pacific: Security Implications of Maritime Tensions and the Taiwan Strait Crisis.",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/WhatsApp Image 2025-08-10 at 22.34.16.jpeg",
+    content: "Analyze security implications and maritime tensions in the Indo-Pacific region.",
   },
   {
     category: "United Nations Human Rights Council",
     title: "Combating the Global Backlash Against LGBTQ+ Rights in Authoritarian and Democratic Regimes: A Comparative Analysis of Policy Responses and International Advocacy.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/WhatsApp Image 2025-08-10 at 22.32.33.jpeg",
+    content: "Discuss policy responses and advocacy for LGBTQ+ rights worldwide.",
   },
   {
     category: "United Nations Council On The Status Of Women",
     title: "Women in Stateless and Occupied Territories: Rights Without a Nation.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/WhatsApp Image 2025-08-10 at 22.28.15.jpeg",
+    content: "Examine the rights and challenges faced by women in stateless and occupied regions.",
   },
   {
     category: "World Health Organization 6-8 Graders",
     title: "Strengthening Mental Health Infrastructure for Youth in the Wake of Climate Anxiety and Digital Overload.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/WhatsApp Image 2025-08-10 at 22.34.16.jpeg",
+    content: "Focus on youth mental health in the context of climate change and digital challenges.",
   },
   {
     category: "All India Political Parties Meet",
     title: "Deliberation on India's Response to Recent Cross-Border Terrorism and Ceasefire Violations by Pakistan.",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/WhatsApp Image 2025-08-10 at 22.32.33.jpeg",
+    content: "Debate India's strategies for addressing cross-border terrorism and ceasefire issues.",
   },
 ];

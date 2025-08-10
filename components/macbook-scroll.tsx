@@ -161,15 +161,14 @@ export const Lid = ({
           transformStyle: "preserve-3d",
           transformOrigin: "top",
         }}
-        className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2"
+        className="absolute inset-0 h-96 w-[32rem] rounded-2xl p-2 overflow-hidden"
       >
-        <div className="absolute inset-0 rounded-lg bg-[#272729]" />
-<img
-  src="/hu.png"
-  alt="This Is a Placeholderrrrrr"
-  className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top"
-/>
-
+        <img
+          src="Screenshot 2025-08-10 at 22.18.56.png"
+          alt="This Is a Placeholderrrrrr"
+          className="absolute inset-0 h-full w-full rounded-lg object-contain object-center"
+          style={{ maxWidth: "100%", maxHeight: "100%" }}
+        />
       </motion.div>
     </div>
   );

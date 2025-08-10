@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Global Model United Nations | GIIS MUN - Student Diplomacy & Leadership',
   description:
-    'Global Model United Nations at GIIS connects bright young minds worldwide to tackle real-world issues through diplomacy, debate, leadership, and global collaboration. Join us for immersive UN simulations, skill-building workshops, and impactful international relations education.',
+    'Join the Global Model United Nations at GIIS for an unparalleled experience in student diplomacy, leadership, and international relations. Participate in authentic UN simulations, develop public speaking and negotiation skills, and connect with future leaders from around the world. GIIS MUN offers workshops, awards, and opportunities for high school students to engage in global issues and civic engagement.',
   generator: 'GIIS',
   keywords: [
     'Model United Nations',
@@ -32,6 +32,31 @@ export const metadata: Metadata = {
     'Global Issues',
     'Conflict Resolution',
     'Civic Engagement',
+    'Student Conferences',
+    'Leadership Development',
+    'International Education',
+    'Future Leaders',
+    'Global Networking',
+    'Student Empowerment',
+    'Educational Conference',
+    'Youth Empowerment',
+    'Global Collaboration',
+    'Skill Building',
+    'Debate Competition',
+    'International Students',
+    'Student Workshops',
+    'UN Agenda',
+    'Sustainable Development Goals',
+    'SDGs',
+    'Global Awareness',
+    'Cultural Exchange',
+    'Academic Excellence',
+    'Student Initiatives',
+    'Leadership Skills',
+    'Global Community',
+    'Youth Conference',
+    'Student Engagement',
+    'International Networking',
   ],
   authors: [
     { name: 'GIIS MUN Team', url: 'https://giismun.org' },
@@ -49,7 +74,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Global Model United Nations | GIIS MUN - Empowering Future Leaders',
     description:
-      'GIIS MUN empowers students globally to experience diplomacy and leadership through engaging, high-impact MUN simulations. Develop public speaking, negotiation, and critical thinking skills while connecting with peers worldwide.',
+      'Experience the GIIS Model United Nations: a global platform for students to develop diplomacy, leadership, and public speaking skills. Join international peers, participate in UN simulations, and become a future leader at GIIS MUN.',
     url: 'https://giismun.org',
     siteName: 'GIIS MUN',
     images: [
@@ -65,16 +90,21 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Global Model United Nations | GIIS MUN',
+    site: '@giismun',
+    creator: '@giismun',
+    title: 'Global Model United Nations | GIIS MUN - Student Diplomacy & Leadership',
     description:
-      'Experience world-class student diplomacy and leadership at GIIS MUN. Register now to engage in impactful UN simulations and develop skills for the global stage.',
+      'Join GIIS MUN for international Model United Nations simulations, leadership development, and global networking. Empowering students to become future leaders.',
     images: ['https://giismun.org/og-image.jpg'],
-    creator: '@giisglobal',
-    site: '@giisglobal',
   },
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  alternates: {
+    canonical: 'https://giismun.org',
+    languages: {
+      'en': 'https://giismun.org',
+    },
+  },
 }
-
 
 export default function RootLayout({
   children,
@@ -83,6 +113,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="YOUR_GOOGLE_SITE_VERIFICATION_CODE" />
+      </head>
       <body>{children}</body>
     </html>
   )
