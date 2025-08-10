@@ -14,8 +14,9 @@ export function DownloadCenter() {
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* Matrix & Allotment */}
                     <a
-                        href="/downloads/matrix-and-allotment.pdf"
-                        download
+                        href="https://docs.google.com/spreadsheets/d/1dnpPX3QK6P_IxS13ZFAs-OBjBwv59Q6xlDmFmThVGcE/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="group rounded-lg border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-lg"
                     >
                         <div className="flex flex-col items-center space-y-4">
@@ -29,7 +30,7 @@ export function DownloadCenter() {
 
                     {/* Brochure */}
                     <a
-                        href="/downloads/brochure.pdf"
+                        href="/GIISNMUN BROCHURE 2025 (1).pdf"
                         download
                         className="group rounded-lg border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-lg"
                     >
@@ -44,7 +45,7 @@ export function DownloadCenter() {
 
                     {/* Guide */}
                     <a
-                        href="/downloads/guide.pdf"
+                        href="/GIISNMUN Code of Conduct.pdf"
                         download
                         className="group rounded-lg border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-lg"
                     >
