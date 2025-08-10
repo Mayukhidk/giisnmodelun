@@ -61,7 +61,7 @@ keywords: [
   'Model UN India',
   'MUN Delhi NCR',
   'MUN Noida',
-]
+],
   authors: [
     { name: 'Mayukh', url: 'https://giisnmun.com' },
     { name: 'Global Indian International School', url: 'https://giisnmun.com' }
