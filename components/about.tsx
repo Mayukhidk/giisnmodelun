@@ -27,21 +27,21 @@ export function Features() {
                                     <Eye className="size-5 text-primary" />
                                 </div>
                                 <div className="relative z-10 text-center">
-                                    <h2 className="group-hover:text-secondary-950 text-lg font-bold transition dark:text-white">Shadow Diplomacy</h2>
-                                    <p className="text-foreground">Navigate off-the-record negotiations, political double-deals, and secret bloc formation in backroom diplomacy sessions.</p>
+                                    <h2 className="group-hover:text-secondary-950 text-lg font-bold transition dark:text-white">GIISNMUN</h2>
+                                    <p className="text-foreground">GIISN MUN is the annual Model United Nations hosted by GIIS Noida. It brings together bright minds from across schools to engage in diplomacy, debate, and decision-making on global issues.</p>
                                 </div>
                             </CardContent>
                         </Card>
 
-                        {/* Clause Warriors */}
+                    
                         <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
                             <CardContent className="pt-6">
                                 <div className="flex justify-center mb-2">
                                     <ScrollText className="size-5 text-primary" />
                                 </div>
                                 <div className="relative z-10 text-center">
-                                    <h2 className="text-lg font-bold transition">Clause Warriors</h2>
-                                    <p className="text-foreground">Draft surgical amendments and outmaneuver rivals with precision wording where every comma can shift the vote.</p>
+                                    <h2 className="text-lg font-bold transition">Our Mission</h2>
+                                    <p className="text-foreground">We aim to inspire students to think critically, collaborate effectively, and cultivate leadership skills while simulating the workings of the United Nations.</p>
                                 </div>
                             </CardContent>
                         </Card>
