@@ -6,17 +6,10 @@ import DottedMap from "dotted-map";
 import { useTheme } from "next-themes";
 
 interface MapProps {
-  dots?: Array<{
-    start: { lat: number; lng: number; label?: string };
-    end: { lat: number; lng: number; label?: string };
-  }>;
   lineColor?: string;
 }
 
-export function WorldMap({
-  dots = [],
-  lineColor = "#F58220", // GIIS orange as default
-}: MapProps) {
+export function WorldMap({ lineColor = "#0ea5e9" }: MapProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });
   const { theme } = useTheme();
@@ -29,8 +22,8 @@ export function WorldMap({
   });
 
   const projectPoint = (lat: number, lng: number) => {
-    const x = (lng + 180) * (800 / 360);
-    const y = (90 - lat) * (400 / 180);
+    const x = ((lng + 180) * 800) / 360;
+    const y = ((90 - lat) * 400) / 180;
     return { x, y };
   };
 
@@ -43,49 +36,18 @@ export function WorldMap({
     return `M ${start.x} ${start.y} Q ${midX} ${midY} ${end.x} ${end.y}`;
   };
 
-  // GIIS Campuses: Singapore (HQ) → all other countries
-  const giisDots = [
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 19.076, lng: 72.8777, label: "India" }, // Mumbai as central India
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 25.276987, lng: 55.296249, label: "Dubai, UAE" },
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 24.4539, lng: 54.3773, label: "Abu Dhabi, UAE" },
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 3.139, lng: 101.6869, label: "Malaysia" }, // Kuala Lumpur
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 13.7563, lng: 100.5018, label: "Thailand" }, // Bangkok
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 35.6762, lng: 139.6503, label: "Japan" }, // Tokyo
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 10.8231, lng: 106.6297, label: "Vietnam" }, // Ho Chi Minh
-    },
-    // Optional additional GSF expansions
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 24.7136, lng: 46.6753, label: "Saudi Arabia" },
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 37.5665, lng: 126.978, label: "South Korea" }, // Seoul
-    },
-    {
-      start: { lat: 1.3521, lng: 103.8198, label: "Singapore" },
-      end: { lat: 11.5564, lng: 104.9282, label: "Cambodia" }, // Phnom Penh
-    },
+  // GIIS campuses: Singapore HQ → other countries
+  const dots = [
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 19.076, lng: 72.8777 } }, // India (Mumbai)
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 25.276987, lng: 55.296249 } }, // Dubai
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 24.4539, lng: 54.3773 } }, // Abu Dhabi
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 3.139, lng: 101.6869 } }, // Malaysia
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 13.7563, lng: 100.5018 } }, // Thailand
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 35.6762, lng: 139.6503 } }, // Japan
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 10.8231, lng: 106.6297 } }, // Vietnam
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 24.7136, lng: 46.6753 } }, // Saudi Arabia
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 37.5665, lng: 126.978 } }, // South Korea
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 11.5564, lng: 104.9282 } }, // Cambodia
   ];
 
   return (
@@ -94,8 +56,6 @@ export function WorldMap({
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
         alt="world map"
-        height="495"
-        width="1056"
         draggable={false}
       />
       <svg
@@ -103,7 +63,7 @@ export function WorldMap({
         viewBox="0 0 800 400"
         className="w-full h-full absolute inset-0 pointer-events-none select-none"
       >
-        {giisDots.map((dot, i) => {
+        {dots.map((dot, i) => {
           const startPoint = projectPoint(dot.start.lat, dot.start.lng);
           const endPoint = projectPoint(dot.end.lat, dot.end.lng);
           return (
@@ -111,76 +71,35 @@ export function WorldMap({
               <motion.path
                 d={createCurvedPath(startPoint, endPoint)}
                 fill="none"
-                stroke={`url(#path-gradient-${i})`}
-                strokeWidth="1.2"
+                stroke="url(#path-gradient)"
+                strokeWidth="1"
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
-                transition={{ duration: 1.2, delay: 0.5 * i, ease: "easeOut" }}
+                transition={{ duration: 1, delay: 0.5 * i, ease: "easeOut" }}
               />
-              <defs>
-                <linearGradient
-                  id={`path-gradient-${i}`}
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop offset="0%" stopColor="white" stopOpacity="0" />
-                  <stop
-                    offset="5%"
-                    stopColor={["#F58220", "#1D4F91", "#7AC142"][i % 3]} // GIIS color cycle
-                    stopOpacity="1"
-                  />
-                  <stop
-                    offset="95%"
-                    stopColor={["#F58220", "#1D4F91", "#7AC142"][i % 3]}
-                    stopOpacity="1"
-                  />
-                  <stop offset="100%" stopColor="white" stopOpacity="0" />
-                </linearGradient>
-              </defs>
             </g>
           );
         })}
 
-        {giisDots.map((dot, i) => (
+        <defs>
+          <linearGradient id="path-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="white" stopOpacity="0" />
+            <stop offset="5%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="95%" stopColor={lineColor} stopOpacity="1" />
+            <stop offset="100%" stopColor="white" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+
+        {dots.map((dot, i) => (
           <g key={`points-group-${i}`}>
             {["start", "end"].map((pos) => {
-              const point = projectPoint(
-                dot[pos as "start" | "end"].lat,
-                dot[pos as "start" | "end"].lng
-              );
+              const point = projectPoint(dot[pos as "start" | "end"].lat, dot[pos as "start" | "end"].lng);
               return (
                 <g key={`${pos}-${i}`}>
-                  <circle
-                    cx={point.x}
-                    cy={point.y}
-                    r="2.5"
-                    fill={["#F58220", "#1D4F91", "#7AC142"][i % 3]}
-                  />
-                  <circle
-                    cx={point.x}
-                    cy={point.y}
-                    r="2.5"
-                    fill={["#F58220", "#1D4F91", "#7AC142"][i % 3]}
-                    opacity="0.5"
-                  >
-                    <animate
-                      attributeName="r"
-                      from="2"
-                      to="8"
-                      dur="1.5s"
-                      begin="0s"
-                      repeatCount="indefinite"
-                    />
-                    <animate
-                      attributeName="opacity"
-                      from="0.5"
-                      to="0"
-                      dur="1.5s"
-                      begin="0s"
-                      repeatCount="indefinite"
-                    />
+                  <circle cx={point.x} cy={point.y} r="2" fill={lineColor} />
+                  <circle cx={point.x} cy={point.y} r="2" fill={lineColor} opacity="0.5">
+                    <animate attributeName="r" from="2" to="8" dur="1.5s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" from="0.5" to="0" dur="1.5s" repeatCount="indefinite" />
                   </circle>
                 </g>
               );
