@@ -26,40 +26,20 @@ export function WorldMapDemo() {
          The GSG schools network spans across the globe, connecting students from diverse backgrounds and cultures. Our mission is to foster global citizenship and understanding through education and collaboration.
         </p>
       </div>
-      <WorldMap
-        dots={[
-          {
-            start: {
-              lat: 64.2008,
-              lng: -149.4937,
-            }, // Alaska (Fairbanks)
-            end: {
-              lat: 34.0522,
-              lng: -118.2437,
-            }, // Los Angeles
-          },
-          {
-            start: { lat: 64.2008, lng: -149.4937 }, // Alaska (Fairbanks)
-            end: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
-          },
-          {
-            start: { lat: -15.7975, lng: -47.8919 }, // Brazil (Brasília)
-            end: { lat: 38.7223, lng: -9.1393 }, // Lisbon
-          },
-          {
-            start: { lat: 51.5074, lng: -0.1278 }, // London
-            end: { lat: 28.6139, lng: 77.209 }, // New Delhi
-          },
-          {
-            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: 43.1332, lng: 131.9113 }, // Vladivostok
-          },
-          {
-            start: { lat: 28.6139, lng: 77.209 }, // New Delhi
-            end: { lat: -1.2921, lng: 36.8219 }, // Nairobi
-          },
-        ]}
-      />
+<WorldMap
+  dots={[
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 19.076, lng: 72.8777 } },      // India (Mumbai)
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 25.276987, lng: 55.296249 } },  // Dubai
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 24.4539, lng: 54.3773 } },      // Abu Dhabi
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 3.139, lng: 101.6869 } },       // Malaysia
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 13.7563, lng: 100.5018 } },     // Thailand
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 35.6762, lng: 139.6503 } },     // Japan
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 10.8231, lng: 106.6297 } },     // Vietnam
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 24.7136, lng: 46.6753 } },      // Saudi Arabia
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 37.5665, lng: 126.978 } },      // South Korea
+    { start: { lat: 1.3521, lng: 103.8198 }, end: { lat: 11.5564, lng: 104.9282 } },     // Cambodia
+  ]}
+/>
     </div>
   );
 }
