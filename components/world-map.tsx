@@ -32,7 +32,7 @@ export function WorldMap({
 
   const projectPoint = (lat: number, lng: number) => {
     const x = (lng + 180) * (800 / 360);
-    const y = (90 - lat) * (400 / 180);
+    const y = (90 - lat) * (400 / 200);
     return { x, y };
   };
 
