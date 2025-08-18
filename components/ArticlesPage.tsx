@@ -107,12 +107,10 @@ const PressSection: React.FC<PressSectionProps> = ({ articles }) => {
   );
 };
 
-// Example dummy data
 const exampleArticles: Article[] = [
   {
     id: "1",
     title: "Coming Soon",
-    subtitle: "Coming Soon",
     excerpt:
       "Coming Soon",
     content:
