@@ -111,33 +111,32 @@ const PressSection: React.FC<PressSectionProps> = ({ articles }) => {
 const exampleArticles: Article[] = [
   {
     id: "1",
-    title: "Im So cool",
-    subtitle: "Global Indian International School's Model United Nations",
+    title: "Coming Soon",
+    subtitle: "Coming Soon",
     excerpt:
-      "We aren't just any model UN conference. We are the Global Indian International School's Model United Nations, where students from around the world come together to discuss pressing global issues.",
+      "Coming Soon",
     content:
-      "Aren't we so cool? Our conference is a platform for students to engage in meaningful discussions, develop leadership skills, and foster international understanding. Participants simulate UN committees, debate global challenges, and propose solutions, all while enhancing their public speaking and negotiation abilities. It's an enriching experience that prepares them for future roles in diplomacy and global governance.",
+      "Coming Soon",
     image:
       "WhatsApp Image 2025-08-03 at 23.16.58.jpeg"
   },
   {
     id: "2",
-    title: "Global Indian International School's Model United Nations",
+    title: "Coming Soon",
     excerpt:
-      "Model United Nations conference showcases the skill and dedication of students.",
+      "Coming Soon",
     content:
-      "Global Indian International School's Model United Nations conference is a testament to the hard work and dedication of students. The event brings together young minds to discuss global issues, fostering leadership and diplomacy skills that are essential in today's world. The conference not only provides a platform for students to engage in meaningful debates but also encourages them to think critically about international relations and global challenges. Through this experience, participants develop a deeper understanding of the complexities of diplomacy and the importance of collaboration in addressing world issues.",
+      "Coming Soon",
     image:
       "WhatsApp Image 2025-08-03 at 23.16.14.jpeg"
   },
   {
     id: "3",
-    title: "The Art of Mayukh",
-    subtitle: "Why Mayukh our HOD of OC is so Cool",
+    title: "Coming Soon",
     excerpt:
-      "He is the best HOD of OC in the world. He is so cool that he can make even the most boring tasks seem interesting, Fun fact he also made this website. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best.",
+      "Coming Soon",
     content:
-      "Why is he the best? Because he is the best. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best. He is the best.",
+      "Coming Soon",
     image:
       "WhatsApp Image 2025-08-03 at 23.17.33.jpeg"
   }
