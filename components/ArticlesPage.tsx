@@ -110,11 +110,14 @@ const PressSection: React.FC<PressSectionProps> = ({ articles }) => {
 const exampleArticles: Article[] = [
   {
     id: "1",
-    title: "Coming Soon",
+    title: "All India Political Party Meet",
     excerpt:
-      "Coming Soon",
+      "From Rhetoric to Realpolitik",
     content:
-      "Coming Soon",
+      "The Hypocrisy and Fragility of India’s Counter-Terror Discourse The post-Pahalgam terror crisis has transformed India’s political landscape into a theatre of contradictions, where rhetoric of nationalism collides with the compulsions of realpolitik. In the aftermath of the April 22nd Pahalgam massacre—which claimed 26 civilian lives—parties across the spectrum have scrambled to demonstrate both resolve and relevance. Yet, the spectacle of parliamentary exchanges reveals less about national unity and more about opportunism clothed in patriotic fervor.Arvind Kejriwal’s volte-face exemplifies this shift. AAP, once a self-proclaimed antidote to “divisive politics,” now embraces the NDA under the pretext of national security. By endorsing Operation Sindoor and applauding surgical precision strikes, Kejriwal attempted to cloak pragmatism in principle. But the follow-up interrogation—whether aligning with BJP erodes AAP’s alternative politics—remains unanswered, exposing the fragility of his stance.
+Foreign policy too lies in the crossfire. External Affairs Minister S. Jaishankar, often India’s diplomatic spearhead, faltered when pressed on the global perception of India’s “zero tolerance” approach. His silence, rationalized by lack of “updated facts,” projected disarray within the very ministry tasked with shaping international narratives.Meanwhile, Amit Shah’s economic-security calculus was underwhelming, collapsing into repetitive assurances of relief funds while evading the deeper tension between militarization and development in Kashmir. Meenakshi Lekhi’s defense of the NIA’s counter-terror numbers devolved into partisan blame-casting against Congress, ignoring the legitimate demand for independent audits that could anchor credibility in transparency rather than propaganda.
+On the opposition front, Mallikarjun Kharge’s bluster about “100 mistakes” in Operation Sindoor imploded when he failed to enumerate even one. The discovery of reliance on ChatGPT notes in his rebuttal only deepened the perception of unpreparedness. Similarly, Rahul Gandhi’s indictment of vague anti-terror laws resurrected accusations of Congress’s inertia post-26/11, a stain the party has yet to wash off.The most revealing paradox surfaced in Sukhbir Singh Badal’s exchange, where BJP insisted that dependence on the U.S. during 26/11 reflected weakness, while present reliance constitutes “partnership. Such rhetorical gymnastics underscore the thin line between strategic autonomy and strategic dependency—a line that may blur again if India confronts another 26/11-scale assault.
+In the crucible of national security, the debates expose a dangerous truth: India’s political class weaponizes memory, grief, and patriotism, yet seldom rises above electoral one-upmanship. National security becomes less about safeguarding sovereignty and more about scoring points in a perpetual blame game.If democracy is to retain credibility amidst bloodshed, India’s leadership must transcend selective outrage and opportunistic alliances. Until then, the ghosts of Pahalgam and Mumbai will haunt not merely the victims’ families but the conscience of an entire nation.",
     image:
       "WhatsApp Image 2025-08-03 at 23.16.58.jpeg"
   },
