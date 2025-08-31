@@ -113,7 +113,7 @@ const exampleArticles: Article[] = [
   "title": "All India Political Party Meet",
   "excerpt": "From Rhetoric to Realpolitik",
   "content": "The Hypocrisy and Fragility of India’s Counter-Terror Discourse\n\nThe post-Pahalgam terror crisis has turned India’s political landscape into a theatre of contradictions, where the rhetoric of nationalism collides with the compulsions of realpolitik. In the aftermath of the April 22nd Pahalgam massacre—which claimed 26 civilian lives—parties across the spectrum scrambled to project both resolve and relevance. Yet the spectacle of parliamentary exchanges revealed less about unity and more about opportunism cloaked in patriotic fervor.\n\nArvind Kejriwal’s volte-face captured this shift. AAP, once branding itself as an antidote to ‘divisive politics,’ now embraces the NDA under the banner of national security. By endorsing Operation Sindoor and applauding surgical strikes, Kejriwal attempted to cloak pragmatism in principle. But the unanswered question—whether aligning with BJP erodes AAP’s alternative identity—laid bare the fragility of his stance.\n\nForeign policy too fell into the crossfire. External Affairs Minister S. Jaishankar, usually India’s diplomatic spearhead, faltered when pressed on global perceptions of India’s ‘zero tolerance’ approach. His refusal to comment for lack of ‘updated facts’ projected disarray within the very ministry entrusted with shaping international narratives.\n\nAmit Shah’s economic-security calculus was similarly underwhelming, reduced to repetitive promises of relief funds while dodging the deeper tension between militarization and development in Kashmir. Meenakshi Lekhi’s defense of NIA statistics collapsed into partisan blame-shifting against Congress, ignoring calls for independent audits that could root credibility in transparency rather than propaganda.\n\nOn the opposition side, Mallikarjun Kharge’s bluster about ‘100 mistakes’ in Operation Sindoor unraveled when he failed to list even one. His reliance on ChatGPT-generated notes in rebuttal only deepened the perception of unpreparedness. Rahul Gandhi’s critique of vague anti-terror laws resurrected old accusations of Congress’s inertia post-26/11—an unresolved stain on the party’s record.\n\nThe sharpest paradox came from Sukhbir Singh Badal’s exchange: BJP dismissed U.S. support during 26/11 as weakness, yet now frames reliance on Washington as ‘partnership.’ Such rhetorical gymnastics expose the thin line between strategic autonomy and strategic dependency—a line that may blur again if India faces another 26/11-scale assault.\n\nIn the crucible of national security, these debates reveal a sobering truth: India’s political class weaponizes memory, grief, and patriotism, yet seldom rises above electoral one-upmanship. National security becomes less about safeguarding sovereignty and more about scoring points in a perpetual blame game.\n\nIf democracy is to retain credibility amidst bloodshed, India’s leadership must transcend selective outrage and opportunistic alliances. Until then, the ghosts of Pahalgam and Mumbai will continue to haunt not just victims’ families but the conscience of an entire nation.",
-  "image": "WhatsApp Image 2025-08-03 at 23.16.58.jpeg"
+  "image": "IMG_7151.jpeg"
 },
   {
     id: "2",
@@ -123,7 +123,7 @@ const exampleArticles: Article[] = [
     content:
       "Coming Soon",
     image:
-      "WhatsApp Image 2025-08-03 at 23.16.14.jpeg"
+      "IMG_7151.jpeg"
   },
   {
     id: "3",
