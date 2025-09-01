@@ -124,13 +124,13 @@ const exampleArticles: Article[] = [
 },
   {
     id: "3",
-    title: "Coming Soon",
+    title: "“National Security is not a Prop” Rahul Gandhi Opens Up in AIPPM Exclusive",
     excerpt:
-      "Coming Soon",
+      "Ajita Pandey, All India Political Parties Meet",
     content:
-      "Coming Soon",
+      "New Delhi — The All India Political Parties Meet turned into a political spectacle today, but away from the noisy speeches and walkouts, Congress leader Rahul Gandhi sat down for an exclusive conversation with the International Press. Calm, measured, yet sharp in his words, he offered insights into both the committee’s drama and the pressing issue of terrorism financing. On being asked about the unexpected AAP–BJP alliance, Gandhi smiled wryly before responding. “This alliance exposes the double standards of both parties. They spent years attacking each other, and now they claim to have suddenly found common ground. National security should never be reduced to stage drama.” Moving to the agenda, Gandhi spoke firmly about the real roots of terrorism financing. “We cannot fight terrorism if we ignore hawala networks, shell companies, and the black money that flows freely in our system. And let’s be honest — unless political funding itself becomes transparent, any motion inside this room will remain lip service.” His critique was sharp, but he also stressed the need for unity. “This fight is bigger than BJP, AAP or Congress. At the end of the day, it is about protecting ordinary Indians — the child going to school, the shopkeeper opening his store, the family boarding a train. We cannot let them live under the shadow of fear.” The interview showed Rahul Gandhi at his most real — blunt about the opportunism in the room, yet still pushing for cooperation. While others traded drama and accusations, his words cut through, reminding everyone that beyond party games, India just wants leaders to act.",
     image:
-      "WhatsApp Image 2025-08-03 at 23.17.33.jpeg"
+      "IMG_7149.jpeg"
   }
 ];
 
