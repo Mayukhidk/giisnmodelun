@@ -117,13 +117,13 @@ const exampleArticles: Article[] = [
 },
   {
     id: "2",
-    title: "Coming Soon",
+    title: "Meenakshi Lekhi (Priyanshi Singh)",
     excerpt:
-      "Coming Soon",
+      "Minister of External Affairs and Culture’s response to Pahalgam attack",
     content:
-      "Coming Soon",
+      "Journalist- Shriya Gupta Delegate- Meenakshi Lekhi (Priyanshi Singh) Q1. You’ve said zero tolerance is India’s sindoor ki laal rekha. How does that principle translate into action against Pakistan’s repeated ceasefire violations? Answer: It should be known without no doubt that any violation is met with strong military and diplomatic response. Be it strikes to the issue being raised on a global forum. India will not tolerate terrorism in any form. The policy of "Vasudhaiva Kutumbkam" shall be followed only when it is reciprocated. Follow-up: If India’s response is so strong, why do ceasefire violations and infiltration attempts still continue year after year? India is today the 4th largest economy in the world. We have achieved tgus feat in such a short span of time. Considering that, some people do have an objection to India rising as a global superpower. But, it it to be noted that Uri happened after so many years of silence, Balakot strikes happened, Operation Sindoor happened. So, we're a strong, resolute nation which will fight terror with unwaveribg courage. Q2. After the Pahalgam attack, what message is India sending to Pakistan and the world? Answer: The message is crystal clear — no terrorism will be tolerated, and perpetrators, sponsors of terrorism will face severe consequences. Follow-up: If that’s the message, do you believe the 2021 ceasefire understanding with Pakistan has any credibility left, or is it permanently broken? Answer: Pakistan should be perceived as a nation who feeds terrorists and carries the message of terrorism through its acts of cowardice. As of now, any negotitaion with such a nation seems amusing and shall not be entertained. Q3. Drone-dropped weapons and explosives have increased along the LoC. How is India adapting to this new threat? Answer: India is using modern technology. Be it AI-driven surveillance, or thermal imaging, or stronger border fencing to counter these shameful tactics. Our security forces are fully prepared for any sort of threat. Follow-up: If technology is being deployed so extensively, how do you explain the rising infiltration success rate — estimated at 30% in 2025? Answer: 55% drone neutralization has been achieved along our borders. More than 260 drones were recovered/shot down in 2024 than 110 in 2023. Systems integrating manpower, sensors, networks, intelligence and command control are being improvised under multi domain detection. So we are continually working towards neutralizing ceasefire violation threats.",
     image:
-      "IMG_7151.jpeg"
+      "IMG_7148.jpeg"
   },
   {
     id: "3",
